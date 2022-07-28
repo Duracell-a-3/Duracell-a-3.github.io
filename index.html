@@ -35,13 +35,11 @@ def getTimes():
     return(delta.days)
 
 async def main(*args, **kwargs):
-    
+    Element("outputDiv1").write("")
     Element("button1").add_class("loading")
-    
     output = getTimes()
     await asyncio.sleep(1)
     Element("outputDiv1").write(output)
-    
     Element("button1").remove_class("loading")
 
 function_proxy = create_proxy(main)
