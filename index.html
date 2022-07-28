@@ -14,16 +14,19 @@
 
   <body>
     
-    <div class="center">Days left: <label id="outputDiv1"></label></div>
-    
-    
+    <div class="center border vwfont">Days left: <label id="outputDiv1" class="pytext"></label></div>
+    <button type="button" id="button1" class="button">Run</button>
+
     <py-script>
 from datetime import datetime
 from datetime import date
 import asyncio
 
+from js import document 
+from pyodide import create_proxy
+
+
 def getTimes():
-    
     now = datetime.now()
     dos = '2023/5/19'
     d1 = now
@@ -31,15 +34,18 @@ def getTimes():
     delta = d2 - d1
     return(delta.days)
 
-async def foo():
-  while True:
-    await asyncio.sleep(1)
+async def main(*args, **kwargs):
+    
+    Element("button1").add_class("loading")
     
     output = getTimes()
+    await asyncio.sleep(1)
     Element("outputDiv1").write(output)
+    
+    Element("button1").remove_class("loading")
 
-pyscript_loader.close()
-pyscript.run_until_complete(foo())
+function_proxy = create_proxy(main)
+document.getElementById("button1").addEventListener("click", function_proxy)
     </py-script>
   </body>
 </html>
