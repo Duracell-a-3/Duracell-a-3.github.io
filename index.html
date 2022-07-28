@@ -13,9 +13,10 @@
   </head>
 
   <body>
-    <h1>I get out in :</h1>
+    <div><h3>I get out in :</h3><label id="outputDiv"></label></div>
     
-    <py-script>
+    
+    <py-script output="outputDiv">
 from datetime import datetime
 from datetime import date
 now = datetime.now()
