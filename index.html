@@ -19,10 +19,11 @@
 from datetime import datetime
 from datetime import date
 now = datetime.now()
-dos = date(2023, 5, 19)
-now.strftime("%m/%d/%Y, %H:%M:%S")
+dos = '2023/5/19)'
+d1 = datetime.strftime(now, "%Y/%m/%d")
+d2 = datetime.strftime(dos, "%Y/%m/%d")
 delta = now - dos
-print(delta.days)
+printf(f'Date Till im out {delta.days}')
     </py-script>
   </body>
 </html>
