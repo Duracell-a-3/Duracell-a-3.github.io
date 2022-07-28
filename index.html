@@ -20,7 +20,7 @@ from datetime import datetime
 from datetime import date
 now = datetime.now()
 dos = '2023/5/19'
-d1 = datetime.strptime(now, "%Y/%m/%d")
+d1 = now.strftime("%Y/%m/%d")
 d2 = datetime.strptime(dos, "%Y/%m/%d")
 delta = d1 - d2
 printf(f'Date Till im out {delta.days}')
