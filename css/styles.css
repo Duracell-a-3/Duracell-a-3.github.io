@@ -1,4 +1,6 @@
-body { background-color: #0C233D; }
+body { 
+    background-color: #0C233D; 
+}
 
 .center {
     display: flex;
@@ -8,7 +10,7 @@ body { background-color: #0C233D; }
   }
 
   .border {
-    border: 3px solid green;
+    border: 3px solid #2363AD;
     background-color: #0C233D;
     box-shadow: 2px 0px 2px 2px #ccc;
   }
@@ -23,7 +25,7 @@ body { background-color: #0C233D; }
     cursor: pointer;
     outline: none;
     color: #fff;
-    background-color: #04AA6D;
+    background-color: #304761;
     border: none;
     border-radius: 15px;
     box-shadow: 9px 9px 9px #999;
