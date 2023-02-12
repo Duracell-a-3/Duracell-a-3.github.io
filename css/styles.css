@@ -1,3 +1,5 @@
+body { background-color: #0C233D; }
+
 .center {
     display: flex;
     justify-content: center;
@@ -7,7 +9,7 @@
 
   .border {
     border: 3px solid green;
-    background-color: rgb(208, 218, 199);
+    background-color: #0C233D;
     box-shadow: 2px 0px 2px 2px #ccc;
   }
 
