@@ -1,7 +1,6 @@
-body { 
-    background-color: #0C233D; 
+body {
+  background-color: #0C233D;
 }
-
 .center {
     display: flex;
     justify-content: center;
@@ -11,8 +10,8 @@ body {
 
   .border {
     border: 3px solid #2363AD;
-    background-color: #0C233D;
-    box-shadow: 2px 0px 2px 2px #ccc;
+    background-color: #304761;
+    box-shadow: 2px 0px 2px 2px #2B4057;
   }
 
   .vwfont {
@@ -28,18 +27,18 @@ body {
     background-color: #304761;
     border: none;
     border-radius: 15px;
-    box-shadow: 9px 9px 9px #999;
+    box-shadow: 9px 9px 9px #2B4057;
   }
   
-  .button:hover {background-color: #3e8e41}
+  .button:hover {background-color: #143A66}
   
   .button:active {
-    background-color: #3e8e41;
-    box-shadow: 5px 5px 5px #666;
+    background-color: #143A66;
+    box-shadow: 5px 5px 5px #2B4057;
     transform: translateY(4px);
   }
   .pytext {
-    color: #a72626;
+    color: White;
   }
 
   .loading:after {
