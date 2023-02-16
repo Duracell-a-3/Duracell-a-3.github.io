@@ -67,3 +67,24 @@ body {
         .25em 0 0 white,
         .5em 0 0 white;}}
   
+
+
+
+
+      .moving-text:hover{
+            animation-play-state: paused;
+        }
+ 
+        /* The animation */
+      @keyframes marquee{
+          0%{transform: translateX(100%);}
+          100%{transform: translateX(-100%);}
+      }
+ 
+        
+      @media (prefers-reduced-motion: no-preference) {
+          .moving-text{
+              animation: marquee 15s linear infinite;
+            }
+      }
+        
